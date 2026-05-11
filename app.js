@@ -1,5 +1,5 @@
 
-/*
+
 // Este é um comentário de linha única
 // Const: é um valor que não muda
 const nomeSistema = "Sistema de Gestão Escolar";
@@ -132,7 +132,6 @@ function calcularDesconto(preco, desconto){
 let precoProduto = 100;
 let valorPago = calcularDesconto(precoProduto, 20);
 console.log("Preço final com desconto: R$ " + valorPago);
-*/
 
 function somarTradicional(a, b) {
     return a + b;
@@ -149,3 +148,15 @@ const calcularTaxa = (valor) => {
 console.log("Soma tradicional: " + somarTradicional(5, 3));
 console.log("Soma com arrow function: " + somarArrow(5, 3));
 console.log("Taxa calculada: " + calcularTaxa(100));
+
+
+/*
+const nomesAtivos = ativos.map(cliente => cliente.nome).join(', ');
+const nomesMaiores = maioresDeIdade.map(cliente => cliente.nome).join(', ');
+
+
+console.log(`--- Resultados da Busca ---`);
+console.log(`Clientes Ativos (${ativos.length}): ${nomesAtivos}`);
+console.log(`Clientes Maiores de Idade (${maioresDeIdade.length}): ${nomesMaiores}`);
+*/
+    
