@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body.bg-light
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      .container
+        a.navbar-brand(href='/') Meu Site
+        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarNav')
+          span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav.ms-auto
+            li.nav-item
+              a.nav-link.active(href='/') Início
+            li.nav-item
+              a.nav-link(href='/sobre') Sobre
+            li.nav-item
+              a.nav-link(href='/contato') Contato
+    .container.py-5
+      .row.align-items-center.g-5
+        .col-lg-7
+          span.badge.text-bg-primary.mb-3 Página inicial
+          h1.display-5.fw-bold.mb-3 Seu site com Express e Bootstrap
+          p.lead.mb-4 Aqui você pode começar a montar a página inicial, a página sobre e a página de contato.
+          .d-flex.gap-2
+            a.btn.btn-primary.btn-lg(href='/sobre') Ver sobre
+            a.btn.btn-outline-secondary.btn-lg(href='/contato') Falar comigo
+        .col-lg-5
+          .card.shadow-sm.border-0
+            .card-body.p-4
+              h2.h4.mb-3 Começo rápido
+              ul.mb-0
+                li Bootstrap via CDN no layout das páginas
+                li Rotas separadas para cada tela
+                li Views simples para aprender a estruturar o projeto
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js')
